@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 let router = new VueRouter({
     routes: [
-        {path: '/', component: require('./pages/index.vue')},
+        {path: '/', component: r => require(['./pages/index.vue'], r)},
     ]
 })
 
