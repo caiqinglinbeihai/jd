@@ -1,0 +1,227 @@
+@import "~normalize.css";
+@import "mixins";
+
+@font-face {
+  font-family: 'iconfont';  /* project id 593346 */
+  src: url('//at.alicdn.com/t/font_593346_522d8bzx45dsra4i.eot');
+  src: url('//at.alicdn.com/t/font_593346_522d8bzx45dsra4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_593346_522d8bzx45dsra4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_593346_522d8bzx45dsra4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_593346_522d8bzx45dsra4i.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: 'iconfont' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    box-sizing: border-box;
+}
+html,body {
+    font: 16px/1.5 Microsoft Yahei;
+}
+a {
+    text-decoration: none;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.relative {
+    position: relative;
+}
+.top {
+    top: 0;
+}
+.bottom {
+    bottom: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    .form-search {
+        flex: 1;
+    }
+    .bg {
+        z-index: -1;
+        background: #de181b;
+        opacity: 0;
+    }
+}
+.form-search {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 0 10px;
+    .logo {
+        padding: 0 15px;
+        font-weight: 700;
+        font-size: 27px;
+        color: #f00;
+        border-right: .5px solid #f3f4f5;
+    }
+    .iconfont {
+        color: #666;
+        font-size: 27px;
+        margin-left: 15px;
+        margin-right: 6px;
+    }
+    .form-control {
+        font-size: 16px;
+        // line-height: 18px;
+    }
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    .form-control {
+        flex: 1;
+    }
+}
+.form-control {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    background: transparent;
+}
+.btn {
+    background: transparent;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.btn-login {
+    margin-left: 20px;
+    color: #fff;
+}
+.bg {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+}
+.main {
+    padding-bottom: 55px;
+    .bg {
+        background: linear-gradient(#000, transparent);
+    }
+    .carousel {
+        height: 300px;
+        background: #0af;
+    }
+    .category {
+        background: #fff;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        .item {
+            margin-top: 20px;
+            .iconfont {
+                font-size: 60px;
+            }
+            .text {
+                color: #666;
+                font-size: 22px;
+            }
+        }
+        .gobal {
+            color: #a300f8;
+        }
+        .fresh {
+            color: #3cc639;
+        }
+        .promote {
+            color: #ffac11;
+        }
+        .supermarket {
+            color: #ea1f45;
+        }
+        .logistics {
+            color: #00cc78;
+        }
+        .clothes {
+            color: #f51284;
+        }
+        .bill {
+            color: #0092e3;
+        }
+        .rank {
+            color: #fc5300;
+        }
+        .bean {
+            .iconfont {
+                background: #ff1f25;
+                color: #fff;
+                border-radius: 20px;
+            }
+        }
+        .money {
+            color: #ee3502;
+        }
+    }
+}
+.category {
+    @include clearfix;
+}
+.item {
+    display: block;
+    float: left;
+    width: 20%;
+    color: #666;
+    .iconfont {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .text {
+        display: block;
+        font-size: 12px;
+    }
+}
+.seckill {
+    display: flex;
+    justify-content: space-between;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    .left {
+        display: flex;
+        align-items: center;
+        .title {
+            font-weight: 700;
+            color: #f02b2b;
+            font-size: 27px;
+        }
+        .section {
+            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}
+.footer-bar {
+    height: 55px;
+    background: #eee;
+    box-shadow: 0 0 5px #999;
+    text-align: center;
+    width: 100%;
+    @include clearfix;
+
+    .home {
+        color: #f23030;
+    }
+}
