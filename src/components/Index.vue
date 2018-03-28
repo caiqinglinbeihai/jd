@@ -64,7 +64,7 @@
                     <div class="left">
                         <span class="title">京东秒杀</span>
                         <span class="section">12点场</span>
-                        <div class="time">
+                        <div class="countdown">
                             <span class="h">01</span>
                             <span class="separator">:</span>
                             <span class="m">55</span>
